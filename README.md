@@ -8,7 +8,6 @@ Project Domain: Logistics and Supply Chain
 Database: Oracle Database / PL/SQL
 
 1. Project Overview
-
 The Reusable Crate Return and Deposit Tracking System is an Oracle PL/SQL database project designed to help beverage distributors manage reusable crates issued to customers, track returned quantities, calculate deposit refunds, and monitor outstanding crates.
 
 2. Problem Statement
