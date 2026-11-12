@@ -71,7 +71,3 @@ The interface will call PL/SQL procedures to process transactions and enforce th
 9. Expected Results
 
 The completed system is expected to improve crate accountability, reduce deposit calculation errors, prevent over-returns, and support accurate reporting of outstanding crates and refunds.
-
-10. References
-
-Accorsi, R., Bartolotti, G., Guidani, B., Manzini, R., & Ronzoni, M. (2026). *R3PACK WP3 Dataset for Deliverable D3.4 – Decision-support model for reuse logistic network design* [Data set]. Zenodo. https://doi.org/10.5281/zenodo.21391977
