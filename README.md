@@ -5,7 +5,7 @@ ID: 29295
 Course: INSY 8311 – Database Development with PL/SQL  
 Instructor:Eric Maniraguha  
 Project Domain: Logistics and Supply Chain  
-**Academic Year: 2026–2027  
+Academic Year: 2026–2027  
 Database Technology: Oracle Database and PL/SQL
 
 1. Project Overview
