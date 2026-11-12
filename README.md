@@ -1,72 +1,129 @@
-. Reusable Crate Return and Deposit Tracking System
+# Beverage Distribution Empty Bottle Collection and Reconciliation System
 
-NAMES:Akimanizanye Kayondo Josiane
+NAMES: Akimanizanye Kayondo Josiane  
 ID: 29295  
-Course:INSY 8311 – Database Development with PL/SQL  
+Course: INSY 8311 – Database Development with PL/SQL  
 Instructor:Eric Maniraguha  
 Project Domain: Logistics and Supply Chain  
-Database: Oracle Database / PL/SQL
+**Academic Year: 2026–2027  
+Database Technology: Oracle Database and PL/SQL
 
 1. Project Overview
-The Reusable Crate Return and Deposit Tracking System is an Oracle PL/SQL database project designed to help beverage distributors manage reusable crates issued to customers, track returned quantities, calculate deposit refunds, and monitor outstanding crates.
+
+The Beverage Distribution Empty Bottle Collection and Reconciliation System is an Oracle PL/SQL database project designed to help beverage distributors manage empty bottle collections from retailers, compare collected quantities with distribution records, identify shortages, and generate accurate reconciliation reports.
+
+The system aims to improve accountability, reduce manual recording errors, and strengthen the management of returnable beverage bottles.
 
 2. Problem Statement
 
-Beverage distributors frequently issue reusable crates to retailers and customers in exchange for refundable deposits. Tracking partial returns manually can lead to inaccurate balances, incorrect refunds, lost crates, and difficulties identifying overdue returns.
+Beverage distributors often experience difficulties tracking empty bottles returned by retailers. Manual recordkeeping can result in inaccurate collection records, missing bottles, duplicate transactions, and unresolved discrepancies between distributed and collected quantities.
+
+These challenges can lead to financial losses, inefficient inventory management, and difficulties monitoring retailer accountability.
 
 3. Project Objectives
 
-Main Objective: Develop an Oracle PL/SQL system that accurately manages reusable crate issues, returns, deposits, and refunds.
+Main Objective
 
-Specific Objectives:
+To develop an Oracle PL/SQL database system that automates empty bottle collection tracking and reconciliation for beverage distributors.
 
-1. Record reusable crates issued to customers.
-2. Track full and partial crate returns.
-3. Automatically calculate refundable deposits.
-4. Prevent returns exceeding outstanding quantities.
-5. Identify overdue crates and outstanding balances.
-6. Generate transaction and deposit reports.
+Specific Objectives
+
+1. Record beverage bottle deliveries to retailers.
+2. Track empty bottles collected from retailers.
+3. Automatically calculate outstanding bottle quantities.
+4. Identify shortages and discrepancies between delivered and collected bottles.
+5. Prevent duplicate collection records and invalid transactions.
+6. Generate retailer collection and reconciliation reports.
 
 4. Proposed Solution
 
-The system will use a relational Oracle database to manage customers, crate types, crate issues, returns, deposits, and refunds. PL/SQL procedures and functions will automate transaction processing, while triggers and exception handling will enforce business rules.
+The proposed system will use an Oracle relational database to store and manage bottle delivery and collection transactions.
+
+PL/SQL procedures, functions, triggers, cursors, and exception handling will automate collection processing, validate transactions, calculate outstanding quantities, and support accurate reconciliation.
 
 5. Data Source
 
-Proposed external research dataset: R3PACK WP3 Dataset D3.4 – Decision-support model for reuse logistic network design.
+Data Source Status: To be confirmed.
 
-Source: https://zenodo.org/records/21391977
+The project requires a real dataset related to beverage distribution, reusable packaging, bottle collection, or reverse logistics.
 
-This dataset provides reusable-packaging and reverse-logistics network information. Its suitability, record count, and licence will be verified before final selection.
+Potential sources include Kaggle, Zenodo, and other open-data repositories.
 
-Crate issue transactions, customer deposits, and partial returns not available in the source data will be separately identified as simulated test data.
+The selected dataset must contain several hundred records, permit educational use, and exclude personally identifiable information.
+
+Where necessary, additional simulated bottle delivery and collection transactions will be used for testing and clearly identified as simulated data.
+
+Dataset Link: To be added after verification.
 
 6. Planned Database Tables
 
-| Table | Purpose |
+| Table Name | Description |
 |---|---|
-| CUSTOMERS | Stores customer information |
-| CRATE_TYPES | Stores reusable crate categories and deposit rates |
-| CRATE_ISSUES | Records quantities issued to customers |
-| CRATE_RETURNS | Records full and partial returns |
-| DEPOSIT_TRANSACTIONS | Records deposits collected and refunded |
-| AUDIT_LOG | Tracks important database operations |
+| RETAILERS | Stores retailer identification and location information |
+| BOTTLE_TYPES | Stores bottle categories and descriptions |
+| DELIVERIES | Records bottles delivered to retailers |
+| COLLECTIONS | Records empty bottles collected from retailers |
+| RECONCILIATIONS | Stores reconciliation results and discrepancies |
+| AUDIT_LOG | Records important database activities |
 
 7. Planned PL/SQL Features
 
-- Stored Procedures: Issue crates, record returns, and process deposit refunds.
-- Functions: Calculate outstanding crates, refundable deposits, and overdue balances.
-- Triggers: Enforce transaction restrictions and record audit events.
-- Cursors: Generate customer-level transaction summaries.
-- Packages: Organize related procedures and functions.
-- Exception Handling: Prevent invalid returns, duplicate transactions, and incorrect quantities.
+Stored Procedures
+- Register bottle deliveries.
+- Record empty bottle collections.
+- Perform bottle reconciliation.
+
+Functions
+- Calculate outstanding bottle quantities.
+- Calculate bottle shortages.
+- Determine retailer collection performance.
+
+Triggers
+- Prevent invalid collection quantities.
+- Record changes to important transactions.
+- Support database auditing.
+
+Cursors
+- Process retailer collection records.
+- Generate reconciliation summaries.
+
+Packages
+- Organize bottle delivery, collection, and reconciliation operations.
+
+Exception Handling
+- Handle invalid quantities.
+- Prevent duplicate transaction entries.
+- Detect missing retailer or bottle records.
 
 8. Planned Innovation
 
-The proposed innovation is an Oracle APEX interface connected to the Oracle database. Users will be able to record crate transactions, view outstanding balances, and monitor overdue returns.
+Innovation Type: User Interface
 
-The interface will call PL/SQL procedures to process transactions and enforce the required business rules.
+Proposed Tool: Oracle APEX
+
+The project will include a simple Oracle APEX interface connected to the Oracle database.
+
+The interface will allow authorized users to register deliveries, record empty bottle collections, view outstanding quantities, and access reconciliation reports.
+
+PL/SQL procedures and triggers will enforce the business rules, while Oracle APEX will provide an interactive interface for users.
 
 9. Expected Results
 
-The completed system is expected to improve crate accountability, reduce deposit calculation errors, prevent over-returns, and support accurate reporting of outstanding crates and refunds.
+The completed system is expected to:
+
+- Improve the accuracy of bottle collection records.
+- Reduce duplicate and invalid transactions.
+- Automatically identify outstanding bottles and shortages.
+- Improve reconciliation between deliveries and collections.
+- Support accurate reporting and retailer accountability.
+
+10. Future Improvements
+
+Future improvements may include barcode scanning, automated shortage notifications, mobile collection recording, and integration with distributor inventory management systems.
+
+11. References
+
+Research references, the verified dataset source, and Oracle technical documentation will be added after reviewing the relevant materials.
+
+
+
