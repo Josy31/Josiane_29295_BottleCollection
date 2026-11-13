@@ -121,9 +121,5 @@ The completed system is expected to:
 
 Future improvements may include barcode scanning, automated shortage notifications, mobile collection recording, and integration with distributor inventory management systems.
 
-11. References
-
-Research references, the verified dataset source, and Oracle technical documentation will be added after reviewing the relevant materials.
-
 
 
