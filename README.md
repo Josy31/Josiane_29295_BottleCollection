@@ -43,7 +43,7 @@ PL/SQL procedures, functions, triggers, cursors, and exception handling will aut
 
 5. Data Source
 
-Data Source Status: To be confirmed.
+Data Source Link: https://zenodo.org/records/21391977?utm_source=chatgpt.com
 
 The project requires a real dataset related to beverage distribution, reusable packaging, bottle collection, or reverse logistics.
 
